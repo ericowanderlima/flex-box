@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+
+    <style>
+        div.container{
+            display: flex;
+
+            background-color: coral;
+        }
+
+        div.itens{
+            
+
+            text-align: center;
+            background-color: blueviolet;
+            border: 1px solid black;
+            padding: 40px;
+            
+        }
+
+        #item-1{
+            order: 7;
+        }
+
+        #item-2{
+            order: 5;
+        }
+
+        #item-3{
+            order: -1;
+        }
+
+        #item-4{
+            order: 0;
+        }
+
+        #item-5{
+            order: 3;
+        }
+
+        #item-6{
+            order: 4;
+        }
+
+        #item-7{
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens" id="item-1">A</div>
+        <div class="itens" id="item-2">B</div>
+        <div class="itens" id="item-3">C</div>
+        <div class="itens" id="item-4">D</div>
+        <div class="itens" id="item-5">E</div>
+        <div class="itens" id="item-6">F</div>
+        <div class="itens" id="item-7">G</div>
+    </div>
+</body>
+</html>
