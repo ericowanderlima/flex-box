@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow e shrink - 010</title>
+
+
+    <style>
+        body{
+            background-color: darkcyan;
+        }
+
+        main.conteiner{
+            background-color: yellow;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+
+            
+            padding: 10px;
+        }
+
+        div.itens{
+            background-color: black;
+            border: 1px solid white;
+            padding: 5px;
+            margin: 2px;
+
+            flex-basis: 200px;
+
+            & p{
+                color: white;
+                text-align: justify;
+            }
+        }
+
+        div#caixa-1{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#caixa-2{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#caixa-3{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#caixa-4{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <main class="conteiner">
+        
+        <div id="caixa-1" class="itens">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ipsa ut voluptas illum temporibus doloribus veritatis officia, at repellendus nihil tempora amet cum excepturi aut optio placeat voluptatibus, quasi voluptatum!
+            Cum, dolorum esse quasi blanditiis enim autem soluta hic commodi at voluptatem. Nisi tempore ducimus fugiat eaque minus temporibus exercitationem deleniti explicabo ad accusamus dolorum perspiciatis assumenda, magni incidunt similique!</p>
+        </div>
+
+        <div id="caixa-2" class="itens">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique enim quod illum commodi velit suscipit expedita nesciunt sed quasi quas saepe molestiae asperiores unde laudantium quos itaque, nostrum beatae quaerat.</p>
+        </div>
+
+        <div id="caixa-3" class="itens">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magnam nemo obcaecati blanditiis aut, quod qui atque hic, incidunt inventore veritatis molestiae. Omnis dolorem dolores quidem voluptatem esse iure illum.</p>
+        </div>
+
+        <div id="caixa-4" class="itens">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magnam nemo obcaecati blanditiis aut, quod qui atque hic, incidunt inventore veritatis molestiae. Omnis dolorem dolores quidem voluptatem esse iure illum.</p>
+        </div>
+       
+    </main>
+</body>
+</html>
