@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Formulário com flex-box</title>
+</head>
+<body>
+    <header>
+        <h1>Criando um formulário com flex-box!</h1>
+    </header>
+
+    <main>
+        <section class="caixa">
+            <div id="imagem">
+                imagem
+            </div>
+            <div id="form">
+                <h2>LOGIN</h2>
+                <p>Este projeto está sendo criado com flex-box</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div id="email">
+                        <label for="iemail">e-mail:</label>
+                        <input type="email" name="email" id="iemail">
+                    </div>
+                    <div id="senha">
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="Senha" id="isenha">
+                    </div>
+                    <div id="botao">
+                        <input type="submit" value="Enviar">
+                        <a href="#">Esqueci a senha</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(rgb(255, 255, 4), black);
+    background-repeat: no-repeat;
+}
+
+header h1{
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 10px black;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 94.9vh;
+    background-color: rgba(0, 0, 0, 0.461);
+
+    & .caixa{
+        width: 40%;
+        background-color: mintcream;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    & div#imagem{
+        height: 200px;
+        background-image: url(../imagens/pexels-ezequiel-da-silva-2902536.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    & h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    & p{
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+
+    & div#form{
+        padding: 5px;
+    }
+
+    & div#email{
+        margin-bottom: 10px;
+    }
+
+    & div#senha{
+        margin-bottom: 10px;
+    }
+
+    & div#botao{
+        
+        
+        
+        & input{
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            padding: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            background-color: rgb(217, 131, 26);
+        }
+
+        & input:hover, a:hover{
+            background-color: blueviolet;
+            color: aqua;
+        }
+
+        & a{
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            margin-bottom: 10px;
+            background-color: rgb(217, 131, 26);
+        }
+    }
+}
